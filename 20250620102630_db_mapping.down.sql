@@ -1,1 +1,1 @@
-DROP TABLE database_mapping;
+DROP TABLE db_mapping;

@@ -1,4 +1,4 @@
-CREATE TABLE database_mapping
+CREATE TABLE db_mapping
 (
     id     UUID PRIMARY KEY,
     url    TEXT NOT NULL UNIQUE,
