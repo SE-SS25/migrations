@@ -1,12 +1,12 @@
 CREATE TABLE worker_metric
 (
     id              UUID PRIMARY KEY,
-    last_heartbeat  TIMESTAMP,
-    uptime          INTERVAL,
-    req_per_sec     INT,
-    write_per_sec   INT,
-    read_per_sec    INT,
-    req_total       BIGINT,
-    req_failed      BIGINT,
-    db_availability REAL
+    last_heartbeat  TIMESTAMPTZ NOT NULL,
+    uptime          INTERVAL    NOT NULL DEFAULT '0ms',
+    req_per_sec     INT         NOT NULL DEFAULT 0,
+    write_per_sec   INT         NOT NULL DEFAULT 0,
+    read_per_sec    INT         NOT NULL DEFAULT 0,
+    req_total       BIGINT      NOT NULL DEFAULT 0,
+    req_failed      BIGINT      NOT NULL DEFAULT 0,
+    db_availability REAL        NOT NULL DEFAULT 0.0
 );

@@ -1,6 +1,6 @@
 CREATE TABLE monitor
 (
     id             UUID PRIMARY KEY,
-    last_heartbeat TIMESTAMP,
-    url            TEXT NOT NULL
+    last_heartbeat TIMESTAMP NOT NULL,
+    url            TEXT      NOT NULL
 );
