@@ -1,4 +1,4 @@
-CREATE TABLE migration_workers
+CREATE TABLE migration_worker
 (
     uuid            UUID PRIMARY KEY,
     last_heartbeat  TIMESTAMP,

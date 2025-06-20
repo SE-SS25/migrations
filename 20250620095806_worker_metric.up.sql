@@ -1,4 +1,4 @@
-CREATE TABLE worker_metrics
+CREATE TABLE worker_metric
 (
     uuid            UUID PRIMARY KEY,
     last_heartbeat  TIMESTAMP,
