@@ -1,0 +1,5 @@
+CREATE TABLE database
+(
+    id  UUID PRIMARY KEY,
+    url TEXT NOT NULL UNIQUE
+);
