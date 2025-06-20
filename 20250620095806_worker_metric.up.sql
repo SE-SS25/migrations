@@ -1,6 +1,6 @@
 CREATE TABLE worker_metric
 (
-    uuid            UUID PRIMARY KEY,
+    id              UUID PRIMARY KEY,
     last_heartbeat  TIMESTAMP,
     uptime          INTERVAL,
     req_per_sec     INT,

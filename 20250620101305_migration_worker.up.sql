@@ -1,6 +1,6 @@
 CREATE TABLE migration_worker
 (
-    uuid            UUID PRIMARY KEY,
+    id              UUID PRIMARY KEY,
     last_heartbeat  TIMESTAMP,
     uptime          INTERVAL,
     working_on_from TEXT,
