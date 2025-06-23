@@ -1,7 +1,8 @@
 CREATE TABLE db_mapping
 (
-    id     UUID PRIMARY KEY,
-    url    TEXT NOT NULL UNIQUE,
-    "from" TEXT NOT NULL UNIQUE,
-    "to"   TEXT NOT NULL UNIQUE
+    id          UUID PRIMARY KEY,
+    m_worker_id UUID NOT NULL UNQIUE referencesmigration_worker(id),
+    url         TEXT NOT NULL,
+    "from"      TEXT NOT NULL UNIQUE,
+    "to"        TEXT NOT NULL UNIQUE
 );
