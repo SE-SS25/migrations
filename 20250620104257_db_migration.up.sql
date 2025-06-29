@@ -5,5 +5,5 @@ CREATE TABLE db_migration
     m_worker_id UUID NOT NULL UNIQUE references migration_worker (id),
     "from"      TEXT NOT NULL UNIQUE,
     "to"        TEXT NOT NULL UNIQUE,
-    status      TEXT NOT NULL,
+    status      TEXT NOT NULL
 );
