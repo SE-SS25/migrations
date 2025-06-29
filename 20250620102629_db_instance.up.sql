@@ -1,0 +1,5 @@
+CREATE TABLE db_instance
+(
+    url     TEXT PRIMARY KEY,
+    created TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
