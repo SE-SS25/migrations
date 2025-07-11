@@ -1,6 +1,5 @@
 -- Add down migration script here
 DROP TABLE migration_worker;
-
 DROP TABLE db_migration;
 
 CREATE TABLE migration_worker

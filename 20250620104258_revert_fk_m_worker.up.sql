@@ -1,12 +1,14 @@
 -- Add up migration script here
 DROP TABLE migration_worker;
-DROP TABLE db_mapping;
+DROP TABLE db_migration;
 
 CREATE TABLE migration_worker
 (
-    id             UUID PRIMARY KEY,
-    last_heartbeat TIMESTAMPTZ NOT NULL,
-    uptime         INTERVAL    NOT NULL DEFAULT '0ms'
+    id              UUID PRIMARY KEY,
+    last_heartbeat  TIMESTAMPTZ NOT NULL,
+    uptime          INTERVAL    NOT NULL DEFAULT '0ms',
+    working_on_from TEXT,
+    working_on_to   TEXT
 );
 
 CREATE TABLE db_migration
